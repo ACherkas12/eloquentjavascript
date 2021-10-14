@@ -1,0 +1,12 @@
+let str = prompt('Введите строку');
+let AnyChar = prompt('Введите символ, вхождения которого нужно посчитать');
+let counter = 0;
+
+function CountChar(str, AnyChar) {
+    for(let i = 0; i<str.length; i++) {
+        if(str[i] === AnyChar) counter++;
+    }
+    console.log(counter);
+}
+
+CountChar(str, AnyChar);
